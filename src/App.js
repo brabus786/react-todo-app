@@ -2,6 +2,8 @@ import React from 'react';
 import List from "./assets/components/List";
 import AddListButton from "./assets/components/AddList";
 
+import DB from './assets/db';
+
 function App() {
 
     return (
@@ -40,7 +42,7 @@ function App() {
                     ]}
                 />
 
-                <AddListButton />
+                <AddListButton colors={DB.colors} />
 
             </div>
 

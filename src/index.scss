@@ -34,3 +34,35 @@ body {
   }
 
 }
+.button{
+
+  height: 37px;
+  background: #4DD599;
+  border-radius: 4px;
+  outline: none;
+  border:none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover{
+    background: darken(#4DD599, 6%);
+  }
+  &:active{
+    background: darken(#4DD599, 10%);
+  }
+}
+.fild{
+  height: 32px;
+  width: 100%;
+  padding-left: 10px;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:focus{
+    border-color: #3c412f;
+  }
+}
