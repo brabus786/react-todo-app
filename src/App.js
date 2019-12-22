@@ -1,11 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import List from "./assets/components/List";
 import AddListButton from "./assets/components/AddList";
 
 import DB from './assets/db';
 
 function App() {
-
+    const [list,setList] = useState(DB.lists.map(item => {
+        item.color = DB.colors.filter(color => color.id === item.colorId)[0].name;
+        return item;
+    }));
     return (
         <div className="todo">
             <div className="todo__sidebar">
@@ -26,20 +29,7 @@ function App() {
                 />
 
                 <List
-                    items={[
-                        {
-                            color:'green',
-                            name: 'Поку'
-                        },
-                        {
-                            color:'blue',
-                            name: 'Фронтенд'
-                        },
-                        {
-                            color:'pink',
-                            name: 'Фильмы и сериа...'
-                        }
-                    ]}
+                    items={list}
                 />
 
                 <AddListButton colors={DB.colors} />

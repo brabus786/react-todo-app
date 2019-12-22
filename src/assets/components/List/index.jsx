@@ -5,7 +5,7 @@ import Badge from "../Badge/Badge";
 import './List.scss';
 
 const List = ({items, isRemovablew, click}) =>{
-console.log(items , isRemovablew , click);
+
     return(
         <ul className="list" onClick={click}>
 
