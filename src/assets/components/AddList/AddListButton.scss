@@ -1,5 +1,5 @@
 .add-list{
-
+position: relative;
   &__popup{
     width: 235px;
     height: 148px;
@@ -8,7 +8,8 @@
     border-radius: 10px;
     padding:18px 15px;
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
+    top:40px;
 
     .close{
       position: absolute;
