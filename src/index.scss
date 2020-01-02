@@ -16,6 +16,7 @@ body {
 
 .todo{
   width: 750px;
+  display: flex;
   //height: 530px;
  // border:1px solid red;
   box-shadow: 1px 2px 11px #ececec;
@@ -31,6 +32,11 @@ body {
     box-sizing: border-box;
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
+  }
+
+  &__tasks{
+    flex: 1;
+    padding: 60px;
   }
 
 }

@@ -16,7 +16,6 @@ const List = ({items, isRemovablew, click, onRemove}) =>{
 
     return(
         <ul className="list" onClick={click}>
-
             {items.map((item, index) =>(
                 <li key={index} className={classNames(item.className,{active:item.active})}>
                     <i>
